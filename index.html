@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Get Weather update</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600,700|Open+Sans:400,600,700&display=swap'
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="title">
+            Get Weather Update <br>
+            <span class="smallFont">As of now works only for Indian Zipcode</span>
+        </h1>
+        <div class="displayWeatherInfo">
+            <div class="userQuery">
+                <ul>
+                    <li>
+                        <p style="text-align: right"><span id="currentDate"></span> </p>
+                    </li>
+
+                  
+                    <li class="userInput">
+                        <input type="text" value="" placeholder="Enter your area ZIP code" maxlength="6" required
+                            id="zipCode"><br>
+                        <p class="error"></p>
+                    </li>
+                    <li>
+                        <input type="button" class="btn btn-long" value="Display Weather Info"
+                            onclick="displayWeatherDetails()">
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="queryResult">
+ 
+ 
+                        <table border="0" cellspacing="0" cellpadding="0" class="queryDetails">
+                            <tr>
+                                <td>
+                                    Current Temperature: 
+                                </td>
+                                <td id="currentTemperature" class="values currTemp">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Max Temperature: 
+                                </td>
+                                <td id="maxTemperature" class="values">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Min Temperature: 
+                                </td>
+                                <td id="minTemperature" class="values">
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    Area Name:
+                                </td>
+                                <td id="areaName" class="values">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Area zipcode:
+                                </td>
+                                <td id="showZipCode" class="values">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Weather condition:
+                                </td>
+                                <td id="condition" class="values">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Sunrise: 
+                                </td>
+                                <td id="sunriseTime" class="values">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Sunset: 
+                                </td>
+                                <td id="sunsetTime" class="values">
+
+                                </td>
+                            </tr>
+                            
+                        </table>
+                 
+                 
+
+               
+            </div>
+        </div>
+        <!-- <div class="goBack">
+            <p><a href="">Back to all projects</a></p>
+        </div> -->
+        <footer>
+            &copy; Developed by <a href="https://grohit.com">G Rohit</a>
+        </footer>
+
+
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="main.js"></script>
+</body>
+
+
+</html>
